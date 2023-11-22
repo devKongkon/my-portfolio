@@ -60,7 +60,7 @@ function Navbar() {
               <Link smooth to='#home'>
                 <li className='cursor-pointer'>Home</li>
               </Link>
-              <Link smooth to=''>
+              <Link smooth to='#home'>
                 <li className='cursor-pointer'>About</li>
               </Link>
               <Link smooth to='#projects'>
@@ -83,12 +83,12 @@ function Navbar() {
             
           </div>
           {/* menu for mobile devices */}
-          <div className={`${isOpen ? "flex" : "hidden"}  absolute right-0 flex-col top-[86px] w-full mx-auto text-center menu-animation bg-[#f2efff] dark:bg-slate-600 text-xl -mt-2 `}>
+          <div className={`${isOpen ? "flex" : "hidden"}  absolute right-0 flex-col top-[86px] w-full mx-auto text-center menu-animation bg-[#fdfdfd] dark:bg-slate-600 text-xl -mt-2 `}>
             <ul className="flex list-none flex-col py-6 dark:text-violet-200">
               <Link smooth to='#home' onClick={closeMenu}>
                 <li className='cursor-pointer pb-6'>Home</li>
               </Link>
-              <Link smooth to=''  onClick={closeMenu}>
+              <Link smooth to='#home' onClick={closeMenu}>
                 <li className='cursor-pointer pb-6'>About</li>
               </Link>
               <Link smooth to='#projects' onClick={closeMenu}>

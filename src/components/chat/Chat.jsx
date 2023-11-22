@@ -3,20 +3,20 @@ import { useRef, useState } from "react";
 import { CiLocationOn, CiMail } from "react-icons/ci";
 
 import emailjs from '@emailjs/browser';
-const variants = {
-    initial: {
-        y: 500,
-        opacity: 0,
-    },
-    animate: {
-        y: 0,
-        opacity: 1,
-        transition: {
-            duration: 0.5,
-            staggerChildren: 0.1,
-        },
-    },
-};
+// const variants = {
+//     initial: {
+//         y: 500,
+//         opacity: 0,
+//     },
+//     animate: {
+//         y: 0,
+//         opacity: 1,
+//         transition: {
+//             duration: 0.5,
+//             staggerChildren: 0.1,
+//         },
+//     },
+// };
 
 function Chat() {
     const ref = useRef()
@@ -48,14 +48,15 @@ function Chat() {
                     <motion.div
                         ref={ref}
                         className="grid grid-cols-1 lg:grid-cols-2 items-center gap-x-20"
-                        variants={variants}
-                        initial="initial"
-                        whileInView="animate">
+                        // variants={variants}
+                        // initial="initial"
+                        // whileInView="animate"
+                    >
                         <motion.div
 
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ delay: 1, duration: 1 }}
+                            // initial={{ opacity: 0 }}
+                            // whileInView={{ opacity: 1 }}
+                            // transition={{ delay: 1, duration: 1 }}
                             className="max-w-sm "
                         >
                             <h1 className="text-5xl py-4 dark:text-gray-200">Say Hello!</h1>
@@ -114,9 +115,9 @@ function Chat() {
                             <motion.form
                                 onSubmit={sendEmail}
                                 ref={formRef}
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                transition={{ delay: 1, duration: 1 }}
+                                // initial={{ opacity: 0 }}
+                                // whileInView={{ opacity: 1 }}
+                                // transition={{ delay: 1, duration: 1 }}
                                 className="space-y-5"
                             >
                                 <div className="flex flex-col items-center gap-y-5 gap-x-6 [&>*]:w-full sm:flex-row">

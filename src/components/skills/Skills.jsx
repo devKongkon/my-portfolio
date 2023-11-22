@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 function Skills() {
     return (
         <>
-            <div className="bg-violet-100 mt-20 dark:bg-slate-600 ">
+            <div className="mt-20 dark:bg-slate-600 ">
                 <div className="container mx-auto py-10 duration-300">
                     <motion.ul
                         //  initial="initial"

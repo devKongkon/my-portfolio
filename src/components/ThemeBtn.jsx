@@ -30,7 +30,7 @@ function ThemeBtn() {
                 {themeMode === "dark" ? (
                     <CiDark className="duration-300 text-3xl text-gray-900 dark:text-white " />
                 ) : (
-                    <CiLight className="text-3xl dark:text-white animate-spin text-violet-700 font-bold " />
+                    <CiLight className="text-2xl dark:text-white text-violet-700 font-bold " />
                 )}
             </div>
         </label>

@@ -11,7 +11,6 @@ import {
 
 const textVariants = {
   initial: {
-    x: 800,
     opacity: 0,
   },
   animate: {
@@ -41,15 +40,10 @@ const textVariants = {
 function Home() {
   return (
     <>
-      <main className="pt-40 bg-violet-100 dark:bg-slate-600 " id="home">
+      <main className="pt-40 bg- dark:bg-slate-600 " id="home">
         <div className="container mx-auto px-4 relative ">
-          <div className="md:grid grid-cols-2 space-y-10 items-center justify-center xl:px-52 " >
+          <div className="md:grid grid-cols-2 space-y-10 items-center justify-center lg:justify-between  " >
             <div className="hero__image shadow-lg"></div>
-            {/* <div className="absolute left-0 animate-bounce duration-500">
-              <img
-                className=""
-                src={bigBall} alt="" />
-            </div> */}
             <motion.div
               initial="initial"
               animate="animate"
@@ -84,14 +78,6 @@ function Home() {
         <section>
           <Skills />
         </section>
-        {/* About section */}
-
-        {/* <section className="container px-4 mx-auto flex flex-col justify-center items-center max-w-5xl py-6">
-          <h1 className="text-center text-2xl py-4">Passionate Front-end Junior Developer</h1>
-          <div>
-            <p className=" text-justify">As a Junior Front-End Developer, I bring a robust set of skills to the table, including proficiency in <span> HTML, CSS, JavaScript, React, Tailwind, and SCSS, Firebase, Figma</span> . My strength lies in the creation and maintenance of responsive websites, ensuring a seamless and enjoyable user experience. I specialize in developing vibrant interfaces by producing meticulous, well-optimized code and leveraging the latest tools and methodologies in web development. Beyond technical acumen, I pride myself on being a collaborative team player, thriving in environments where I can work closely with cross-functional teams to deliver exceptional web applications.</p>
-          </div>
-        </section> */}
         {/* Project section */}
         <section className="container px-4 mx-auto py-10 flex flex-col items-center justify-center gap-y-20" id="projects">
           <MovieApp />
